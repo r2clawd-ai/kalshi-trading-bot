@@ -1,0 +1,49 @@
+{
+  "capital": {
+    "initial_balance": 66.13,
+    "max_position_size_pct": 0.10,
+    "max_portfolio_risk_pct": 0.30,
+    "reserve_cash_pct": 0.10
+  },
+  "trading": {
+    "min_edge": 0.05,
+    "max_spread": 0.10,
+    "rebalance_interval_seconds": 3600,
+    "order_timeout_seconds": 30,
+    "max_slippage_pct": 0.02
+  },
+  "markets": {
+    "categories": ["politics", "sports", "economics", "weather"],
+    "min_liquidity": 1000,
+    "max_markets_monitored": 100,
+    "refresh_interval_seconds": 60
+  },
+  "risk": {
+    "stop_loss_pct": 0.20,
+    "take_profit_pct": 0.50,
+    "max_drawdown_pct": 0.25,
+    "position_correlation_limit": 0.70
+  },
+  "sports": {
+    "enabled_leagues": ["NFL", "NBA", "MLB", "NHL", "NCAA"],
+    "min_odds_value": 0.05,
+    "max_positions_per_game": 2
+  },
+  "simulation": {
+    "enabled": true,
+    "backtest_days": 30,
+    "monte_carlo_iterations": 1000
+  },
+  "observability": {
+    "health_check_interval_seconds": 60,
+    "alert_on_supervisor_restart": true,
+    "alert_on_large_loss": true,
+    "large_loss_threshold_pct": 0.10,
+    "metrics_retention_days": 30
+  },
+  "dashboard": {
+    "enabled": true,
+    "port": 8080,
+    "host": "localhost"
+  }
+}
